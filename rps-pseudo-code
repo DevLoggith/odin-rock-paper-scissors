@@ -1,0 +1,31 @@
+how to play rock paper scissors
+
+rock > Scissors
+paper > Rock
+scissors > Paper
+
+inputs
+  -random generated selection of rock, paper, or scissors from computer
+  -input selection or rock, paper, or scissors from user
+  -restart function to start game over again
+  -
+  
+outputs
+  -message/text:
+    *"You win! Rock beats scissors"
+    *"You win! Paper beats rock"
+    *"You win! Scissors beats paper"
+    *"You lose, rock beats scissors"
+    *"You lose, paper beats rock"
+    *"You lose, scissors beats paper"
+    *"Congrats, You won!"
+    *"Game over, better luck next time"
+  -
+    
+computer picks a random selection of either rock, paper, or scissors
+player imputs a selection of either rock, paper, or scissors
+if player imput is < computer generated input, display "you lose" message
+if player imput is > computer generated imput, display "you win" message
+repeat for 5 rounds and decalre a winner at the end of 5th game
+reset number of tries and history of tries to start game over again from the beginning
+
