@@ -5,27 +5,36 @@ paper > Rock
 scissors > Paper
 
 inputs
-  -random generated selection of rock, paper, or scissors from computer
-  -input selection or rock, paper, or scissors from user
+  -random computer generated selection of rock, paper, or scissors
+  -input user selection of rock, paper, or scissors
   -restart function to start game over again
   -
   
 outputs
-  -message/text:
+  -legal message/text:
+   -rounds
     *"You win! Rock beats scissors"
     *"You win! Paper beats rock"
     *"You win! Scissors beats paper"
     *"You lose, rock beats scissors"
     *"You lose, paper beats rock"
     *"You lose, scissors beats paper"
+    *"it's a tie!"
+   -Games
     *"Congrats, You won!"
     *"Game over, better luck next time"
-  -
-    
-computer picks a random selection of either rock, paper, or scissors
-player imputs a selection of either rock, paper, or scissors
-if player imput is < computer generated input, display "you lose" message
-if player imput is > computer generated imput, display "you win" message
-repeat for 5 rounds and decalre a winner at the end of 5th game
-reset number of tries and history of tries to start game over again from the beginning
+  -illegal message/text:
+    *"Not a valid choice"
+  
+  
+- computer picks random selection of ['rock', 'paper', or 'scissors']
+- window prompts player to make a selection or either ( 'Rock, Paper, or Scissors' )
+- player types in selection and clicks 'ok'
+- selections are compared and winner and loser (or tie) is determined 
+    *if player imput is > computer, display "you win" message
+    *if player imput is < computer generated input, display "you lose" message
+    *if player imput is = computer generated imput, display "it's a tie!" message
+- repeat for 5 rounds and decalre a winner at the end of 5th game
+- reset number of tries and history of tries with a button to start game over again from the beginning
+
 
