@@ -1,0 +1,63 @@
+switch (true) {
+  
+  case (playerSelection === 'rock' && computerSelection === 'scissors'):
+    playerScore++;
+    console.log("You win! Rock beats Scissors");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === 'paper' && computerSelection === 'rock'):
+    playerScore++;
+    console.log("You win! Paper beats Rock");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === 'scissors' && computerSelection === 'paper'):
+    playerScore++;
+    console.log("You win! Scissors beats Paper");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === 'rock' && computerSelection === 'paper'):
+    computerScore++;
+    console.log("You lose, paper beats Rock");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === 'paper' && computerSelection === 'scissors'):
+    computerScore++;
+    console.log("You lose, Scissors beats Paper");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === 'scissors' && computerSelection === 'rock'):
+    computerScore++;
+    console.log("You lose, Rock beats Scissors");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  case (playerSelection === computerSelection):
+    tie++;
+    console.log("It's a tie!");
+    console.log(playerScore, "<-- Your Score");
+    console.log(computerScore, "<-- Computer's Score");
+    console.log(tie, "<-- Ties");
+    break;
+    
+  default:
+    console.log("Something has gone horribly wrong");
+}
+
+

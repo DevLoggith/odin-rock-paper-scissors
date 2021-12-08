@@ -6,11 +6,14 @@ let computerScore = 0;
 let tie = 0;
 
 function computerPlay() {
+  // returns a random selection from the 'choices' array with an equal 
+  // probability of each choice being returned.
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
-  playerSelection = window.prompt( "Select either Rock, Paper, or Scissors").toLowerCase();
+  playerSelection = 
+      window.prompt( "Select either Rock, Paper, or Scissors").toLowerCase();
   computerSelection = computerPlay();
 
   console.log(playerSelection)
@@ -74,6 +77,8 @@ function playRound(playerSelection, computerSelection) {
       console.log(tie, "<-- Ties");
       break;
       
+    // default case being utilized as a way to catch invalid prompt entries.
+    // game still counts invalid entry as one round. 
     default:
       console.log("Please enter a valid choice");
   }
