@@ -1,4 +1,4 @@
-const choices = ['rock', 'paper', 'scissors'];
+const CHOICES = ['rock', 'paper', 'scissors'];
 let playerSelection;
 let computerSelection;
 let playerScore = 0;
@@ -6,9 +6,9 @@ let computerScore = 0;
 let tie = 0;
 
 function computerPlay() {
-  // returns a random selection from the 'choices' array with an equal 
+  // returns a random selection from the 'CHOICES' array with an equal 
   // probability of each choice being returned.
-  return choices[Math.floor(Math.random() * choices.length)];
+  return CHOICES[Math.floor(Math.random() * CHOICES.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -78,7 +78,7 @@ function playRound(playerSelection, computerSelection) {
       break;
       
     // default case being utilized as a way to catch invalid prompt entries.
-    // game still counts invalid entry as one round. 
+    // game still counts invalid entry as one round (for now).
     default:
       console.log("Please enter a valid choice");
   }
